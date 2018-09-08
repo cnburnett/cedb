@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e5ef755c14551ad0b83bde8bbc304e2",
+    "content-hash": "3c241d7daf37ac3bd0f2c765360d7e88",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1906,16 +1906,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.6",
+            "version": "8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "7d7184a69ac90ce53929ce99f18458043416107a"
+                "reference": "4a2507b102fcedc74507fd372131f2ed72913429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/7d7184a69ac90ce53929ce99f18458043416107a",
-                "reference": "7d7184a69ac90ce53929ce99f18458043416107a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/4a2507b102fcedc74507fd372131f2ed72913429",
+                "reference": "4a2507b102fcedc74507fd372131f2ed72913429",
                 "shasum": ""
             },
             "require": {
@@ -2033,10 +2033,12 @@
                 "drupal/link": "self.version",
                 "drupal/locale": "self.version",
                 "drupal/media": "self.version",
+                "drupal/media_library": "self.version",
                 "drupal/menu_link_content": "self.version",
                 "drupal/menu_ui": "self.version",
                 "drupal/migrate": "self.version",
                 "drupal/migrate_drupal": "self.version",
+                "drupal/migrate_drupal_multilingual": "self.version",
                 "drupal/migrate_drupal_ui": "self.version",
                 "drupal/minimal": "self.version",
                 "drupal/node": "self.version",
@@ -2068,7 +2070,8 @@
                 "drupal/user": "self.version",
                 "drupal/views": "self.version",
                 "drupal/views_ui": "self.version",
-                "drupal/workflows": "self.version"
+                "drupal/workflows": "self.version",
+                "drupal/workspaces": "self.version"
             },
             "require-dev": {
                 "behat/mink": "1.7.x-dev",
@@ -2079,7 +2082,7 @@
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "mikey179/vfsstream": "^1.2",
                 "phpspec/prophecy": "^1.4",
-                "phpunit/phpunit": "^4.8.35 || ^6.1",
+                "phpunit/phpunit": "^4.8.35 || ^6.5",
                 "symfony/css-selector": "^3.4.0",
                 "symfony/debug": "^3.4.0",
                 "symfony/phpunit-bridge": "^3.4.3"
@@ -2137,7 +2140,91 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-08-01T20:50:42+00:00"
+            "time": "2018-09-05T22:16:20+00:00"
+        },
+        {
+            "name": "drupal/crm_core",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/crm_core",
+                "reference": "24b50ab864372d18ac29192e5eef09616b94fcde"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/crm_core_activity": "*",
+                "drupal/crm_core_contact": "*",
+                "drupal/crm_core_relationship": "*",
+                "drupal/dynamic_entity_reference": "*",
+                "drupal/entity": "*",
+                "drupal/name": "*",
+                "drupal/relation": "*",
+                "drupal/search_api": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1512281992",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Anonymous",
+                    "homepage": "https://www.drupal.org/user/0"
+                },
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Morbus Iff",
+                    "homepage": "https://www.drupal.org/user/9034"
+                },
+                {
+                    "name": "RoSk0",
+                    "homepage": "https://www.drupal.org/user/325151"
+                },
+                {
+                    "name": "cr0ss",
+                    "homepage": "https://www.drupal.org/user/432492"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "pingers",
+                    "homepage": "https://www.drupal.org/user/56282"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "vlkff",
+                    "homepage": "https://www.drupal.org/user/320057"
+                }
+            ],
+            "description": "CRM Core is a set of modules that provide contact management functionality within Drupal web sites.",
+            "homepage": "https://www.drupal.org/project/crm_core",
+            "support": {
+                "source": "http://cgit.drupalcode.org/crm_core"
+            },
+            "time": "2017-11-29T21:17:43+00:00"
         },
         {
             "name": "drupal/feeds",
@@ -4516,34 +4603,35 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "c2b757934f2d9681a287e662efbc27c41fe8ef86"
+                "reference": "53c15a6a7918e6c2ab16ae370ea607fb40cab196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/c2b757934f2d9681a287e662efbc27c41fe8ef86",
-                "reference": "c2b757934f2d9681a287e662efbc27c41fe8ef86",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/53c15a6a7918e6c2ab16ae370ea607fb40cab196",
+                "reference": "53c15a6a7918e6c2ab16ae370ea607fb40cab196",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "psr/http-message": "~1.0",
-                "symfony/http-foundation": "~2.3|~3.0|~4.0"
+                "php": "^5.3.3 || ^7.0",
+                "psr/http-message": "^1.0",
+                "symfony/http-foundation": "^2.3.42 || ^3.4 || ^4.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~3.2|4.0"
+                "symfony/phpunit-bridge": "^3.4 || 4.0"
             },
             "suggest": {
+                "psr/http-factory-implementation": "To use the PSR-17 factory",
                 "psr/http-message-implementation": "To use the HttpFoundation factory",
                 "zendframework/zend-diactoros": "To use the Zend Diactoros factory"
             },
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -4572,7 +4660,7 @@
                 "http-message",
                 "psr-7"
             ],
-            "time": "2017-12-19T00:31:44+00:00"
+            "time": "2018-08-30T16:28:28+00:00"
         },
         {
             "name": "symfony/routing",
@@ -5262,16 +5350,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.8.5",
+            "version": "1.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "3e4edb822c942f37ade0d09579cfbab11e2fee87"
+                "reference": "20da13beba0dde8fb648be3cc19765732790f46e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/3e4edb822c942f37ade0d09579cfbab11e2fee87",
-                "reference": "3e4edb822c942f37ade0d09579cfbab11e2fee87",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/20da13beba0dde8fb648be3cc19765732790f46e",
+                "reference": "20da13beba0dde8fb648be3cc19765732790f46e",
                 "shasum": ""
             },
             "require": {
@@ -5284,6 +5372,7 @@
             "require-dev": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
+                "php-http/psr7-integration-tests": "dev-master",
                 "phpunit/phpunit": "^5.7.16 || ^6.0.8 || ^7.2.7",
                 "zendframework/zend-coding-standard": "~1.0"
             },
@@ -5321,7 +5410,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-08-10T14:16:32+00:00"
+            "time": "2018-09-05T19:29:37+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -6684,16 +6773,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.5.12",
+            "version": "6.5.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "24da433d7384824d65ea93fbb462e2f31bbb494e"
+                "reference": "0973426fb012359b2f18d3bd1e90ef1172839693"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/24da433d7384824d65ea93fbb462e2f31bbb494e",
-                "reference": "24da433d7384824d65ea93fbb462e2f31bbb494e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0973426fb012359b2f18d3bd1e90ef1172839693",
+                "reference": "0973426fb012359b2f18d3bd1e90ef1172839693",
                 "shasum": ""
             },
             "require": {
@@ -6764,7 +6853,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-08-22T06:32:48+00:00"
+            "time": "2018-09-08T15:10:43+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -7584,18 +7673,18 @@
         },
         {
             "name": "webflo/drupal-core-require-dev",
-            "version": "8.5.6",
+            "version": "8.6.0",
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
                 "behat/mink-selenium2-driver": "1.3.x-dev",
                 "drupal/coder": "^8.2.12",
-                "drupal/core": "8.5.6",
+                "drupal/core": "8.6.0",
                 "jcalderonzumba/gastonjs": "^1.0.2",
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "mikey179/vfsstream": "^1.2",
                 "phpspec/prophecy": "^1.4",
-                "phpunit/phpunit": "^4.8.35 || ^6.1",
+                "phpunit/phpunit": "^4.8.35 || ^6.5",
                 "symfony/css-selector": "^3.4.0",
                 "symfony/debug": "^3.4.0",
                 "symfony/phpunit-bridge": "^3.4.3"
@@ -7606,12 +7695,13 @@
                 "GPL-2.0-or-later"
             ],
             "description": "require-dev dependencies from drupal/core",
-            "time": "2018-08-01T21:01:43+00:00"
+            "time": "2018-09-05T22:31:48+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/crm_core": 20,
         "drupal/feeds": 15
     },
     "prefer-stable": true,
