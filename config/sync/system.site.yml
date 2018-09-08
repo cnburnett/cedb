@@ -1,0 +1,14 @@
+uuid: 52e963e7-b8b0-40c4-9255-fab8fbd5bbd3
+name: 'CEDB Drupal8 on Postrgres'
+mail: info@cedb.ca
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

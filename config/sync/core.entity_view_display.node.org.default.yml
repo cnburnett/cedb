@@ -1,0 +1,28 @@
+uuid: dd863f35-b6d6-49af-9891-7a15af3d61d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.org.body
+    - node.type.org
+  module:
+    - text
+    - user
+id: node.org.default
+targetEntityType: node
+bundle: org
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
