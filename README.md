@@ -100,8 +100,8 @@ Lando will show you the local IP/domain:ports that you need to view CEDB in your
 #### 7. Open CEDB in a browser ####
 
 Here are some passwords:
-Drupal Username: admin
-Drupal Password: admin
+- Drupal Username: admin
+- Drupal Password: admin
 
 ## How to capture changes in Code (Github)
 
@@ -120,7 +120,18 @@ Using Drush to capture configuration (everything from Site Name to Block setting
 - Check if a-ok:
 - $ lando drush pm-list
 - Change settings and configuration
-- When you are happy, use cex to capture the changes and commit to git and Github (see above)
+
+## How to capture structural changes
+- When you are happy, use cex to capture the changes and commit to git and Github
+
+Build (export) the initial config yml files using:
+
+```
+$ lando drush cex
+$ git status
+$ git add * [IF NEEDED]
+$ git commit -am 'YOUR MESSAGE'
+```
 
 ## Update Modules and Drupal core
 
@@ -132,8 +143,7 @@ This may work just fine:
 $ lando composer update
 ```
 
-
-## Appendix: Initial CEDB Build Instructions
+## Appendix: Initial CEDB Build Steps
 
 References:
 
@@ -260,29 +270,14 @@ https://help.github.com/articles/adding-an-existing-project-to-github-using-the-
 $ git remote add origin git@github.com:username/cedb.git
 ```
 
-Step 10. Start adding custom content types, views and blocks.
-
-In the Drupal UI.
-
-Step 11. Capture the configuration
-
-Build (export) the initial config yml files using:
-
-```
-$ lando drush cex
-```
-
-Then, add these config yml files to the repo using:
-
-```
-$ git add .
-$ git commit -am ""
-```
-
-Step 12. Run installation
+Step 10. Run installation
 
 e.g.
 
-Note that at Step 4. Set Up the Database, in ADVANCED OPTIONS, change the host to 'database'
+Note that at Step 4. of the insatllation "Set Up the Database", in ADVANCED OPTIONS, change the host to 'database'
 
-Step 13. After running the install, there will me a new directory... 'config/' that we need to add to Git.
+Step 11. After running the install, there will me a new directory... 'config/' that we need to add to Git.
+
+Step 12. Start adding custom content types, views and blocks.
+
+In the Drupal UI.
